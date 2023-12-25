@@ -1,0 +1,22 @@
+nav {
+    width: 31rem;
+    display: flex;
+    align-items: center;
+    gap: 2.8125rem;
+
+    color: #FFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-family: 'Red Hat Mono';
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+header {
+    display: flex;
+    margin: 1.5rem 2rem;
+    align-items: center;
+    justify-content: space-between;
+    gap: 48.88rem;
+}
