@@ -20,3 +20,144 @@ header {
     justify-content: space-between;
     gap: 48.88rem;
 }
+
+footer {
+   position: relative;
+   height: 36.875rem;
+   width: 90rem;
+   border-top: 3px solid #FFF;
+}
+
+.logo {
+    position: absolute;
+    top: 2.625rem; left: 4.375rem;
+    height: 5.5rem;
+    width: 5.5rem;
+}
+
+.ftContent {
+    position: absolute;
+    top: 2.625; left: 14.6875rem;
+
+    display: flex;
+    width: 70.875rem;
+    height: 32rem;
+    align-items: flex-start;
+    gap: 15rem;
+    flex-shrink: 0;
+}
+
+.ftLinkContainer {
+    display: flex;
+    height: 15.8125rem;
+    padding-right: 0.1875rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 3.6875rem;
+}
+
+.ftLink {
+    display: flex;
+    width: 13.1875rem;
+    height: 1.5rem;
+    align-items: flex-start;
+    gap: 2.0625rem;
+
+    color: #FFF;
+    font-family: Red Hat Mono;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.footerIcon {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.ftContact {
+    display: flex;
+    width: 13.1875rem;
+    height: 1.5rem;
+    align-items: flex-start;
+    gap: 2.0625rem;
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.ftContactContainer {
+    display: flex;
+    height: 3.48438rem;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.socialsContainer {
+    display: flex;
+    width: 14rem;
+    height: 21.54688rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.25rem;
+}
+
+.ftNavMapContainer {
+    position: absolute;
+    top: 2.625rem;
+    /* left: 43rem; */
+    right: 0.25rem;
+    display: flex;
+    align-items: flex-start;
+    gap: -3.0625rem;
+}
+
+.ftNavContainer {
+    display: flex;
+    width: 18.5rem;
+    padding-right: 0.0625rem;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-start;
+}
+
+.ftNav {
+    display: flex;
+    width: 18.4375rem;
+    height: 5.125rem;
+    flex-direction: column;
+    justify-content: center;
+
+    color: #FFF;
+    font-family: Roboto Slab;
+    font-size: 2rem;
+    font-weight: 400;
+    text-decoration-line: underline;
+}
+
+.mapContainer {
+    display: flex;
+    width: 26.4375rem;
+    height: 32rem;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5625rem;
+}
+
+.location {
+    color: #FFF;
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+#copyright_txt {
+    position: absolute;
+    text-align: center;
+    bottom: 2.25rem;
+    left: 40.3125rem;
+    font-size: 0.9375;
+    color: #FFF;
+}
+
