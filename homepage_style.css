@@ -1,3 +1,12 @@
+#home_page {background-color: rgb(161, 255, 255);}
+#portfolio_page {background-color: #B2C5C6;}
+
+body{
+        margin: 0;
+        padding: 0;
+    }
+
+
 nav {
     width: 31rem;
     display: flex;
@@ -22,11 +31,14 @@ header {
 }
 
 footer {
-   position: relative;
-   height: 36.875rem;
-   width: 90rem;
-   border-top: 3px solid #FFF;
+    z-index: -2;
+    position: relative;
+    top: 200;
+    height: 36.875rem;
+    width: 90rem;
+    border-top: 3px solid #FFF;
 }
+
 
 .logo {
     position: absolute;
@@ -145,11 +157,12 @@ footer {
     gap: 1.5625rem;
 }
 
-.location {
+.ftLink .location {
     color: #FFF;
     font-family: Inter;
     font-size: 1rem;
     font-weight: 300;
+    width: 100%;
 }
 
 #copyright_txt {
@@ -161,3 +174,143 @@ footer {
     color: #FFF;
 }
 
+#pageName {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    font-family: 'Inter', sans-serif;
+    font-weight: 100;
+    font-size: 3rem;
+    color: #ffffff;
+    margin-top: -2rem;
+}
+
+/* ----------------------------------------------------- */
+
+.greenPhotos {
+    z-index: 1;
+    background-color: #B2C5C6;
+    height: 70rem;
+}
+
+.whitePhotos {
+    position: relative;
+    --parallax-speed:5;
+    z-index: 2;
+    top: 80rem;
+    /* background-color: #E8E8E8; */
+    /* height: 70rem; */
+    /* box-shadow: 0px -6px 4px 0px rgba(0, 0, 0, 0.25); */
+}
+
+.whitePhotos::before{
+    position: absolute;
+    content: '';
+    --parallax-speed: 5;
+    z-index: -1;
+    inset: 0;
+    background-color: #E8E8E8;
+    height: 70rem;
+    box-shadow: 0px -6px 4px 0px rgba(0, 0, 0, 0.25);
+    transform: skewY(-3deg);
+}
+
+
+.blackPhotos {
+    --parallax-speed:8;
+    z-index: 3;
+    top: 172rem;
+    background-color: #171717;
+    height: 70rem;
+    box-shadow: 0px -6px 4px 0px rgba(0, 0, 0, 0.25), 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.photosWrapper {
+    display: flex;
+    margin: 6% 10%;
+    flex-wrap: wrap;
+    height: 30.75; width: 80%;
+    gap: 5rem;
+    justify-content: space-evenly;
+}
+
+.photosWrapper img {   
+    border: 0.5rem solid #ffffff;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    object-fit: cover;
+}
+
+.portfolio_thumbnails {
+    width: 12.25rem;
+    height: 9.75em;
+}
+
+.portfolioDoublet_thumbnails {
+    width: 18.75rem;
+    height: 25em;
+}
+
+
+.portfolio_thumbnails:hover {
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    border: 0.8125rem solid #ffffff;
+}
+
+
+.pf_parallax {
+    position: relative;
+    z-index: 0;
+}
+
+.pf_parallax > *{
+    position: absolute;
+    animation: portfolio_parallax;
+    animation-timeline: scroll();
+}
+
+@keyframes portfolio_parallax {
+    to {
+        transform: translateY(calc(var(--parallax-speed) * -200px));
+    }
+}
+
+
+#fullPhoto_overlay {
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1c1cab;
+    display: none;
+}
+
+
+#fullPhoto{
+    /* object-fit: contain; */
+    max-width: 80vw;
+    max-height: 80vh;
+    width: auto;
+    height: auto;
+    border: 0.3rem solid #ffffff;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#crossButton{
+    position: absolute;
+    top: 3rem;
+    right: 12rem;
+    height: 4rem; width: 4rem;
+    cursor: pointer;
+}
+
+
+#portfolio_page main {
+    padding-bottom: 40rem;
+    height: 105rem;
+}

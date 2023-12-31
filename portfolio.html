@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage_style.css">
+
+    <script type="text/javascript"
+    src="https://platform-api.sharethis.com/js/sharethis.js#property=65907c4981064a00129d14be&product=image-share-buttons&source=platform"
+    async="async"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100;300&family=Red+Hat+Mono:ital,wght@0,400;0,500;1,500&family=Roboto+Slab&display=swap" rel="stylesheet">
+
+    <title>Open Lens - Portfolio</title>
+</head>
+<body id="portfolio_page">
+
+    <header>
+        <div><img src="images\openLens_Logo.svg" alt="logo" style="height: 5.5rem; width: 5.5rem;"></div>
+        <nav>
+            <div>Home</div>
+            <div>Portfolio</div>
+            <div>Contact</div>
+            <div>About</div>
+        </nav>
+    </header>
+    
+    <div id="pageName">Portfolio</div>
+
+    <main>
+        <div id="fullPhoto_overlay">
+            <img id="fullPhoto" src="thumbnails\blackPhoto04.jpeg" alt="" loading="eager">
+            <img src="icons\cross_vector.svg" alt="" id="crossButton" onclick="closeFullPhoto()">
+        </div>
+        <div class="pf_parallax">
+            <div class="greenPhotos">
+                <div class="photosWrapper">
+                    <img src="thumbnails\greenPhoto01.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\greenPhoto02.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\greenPhoto03.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\greenPhoto04.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\greenPhoto05.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\greenPhoto06.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\greenPhoto07.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\greenPhoto08.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\greenPhoto09.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)" style="width: 18.75rem; height: 25em;">
+                    <img src="thumbnails\greenPhoto10.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)" style="width: 18.75rem; height: 25em;">
+                </div>
+            </div>
+            <div class="whitePhotos">
+                <div class="photosWrapper">
+                    <img src="thumbnails\whitePhoto01.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\whitePhoto02.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\whitePhoto03.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\whitePhoto04.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\whitePhoto05.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\whitePhoto06.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\whitePhoto07.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\whitePhoto08.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\whitePhoto09.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)" style="width: 18.75rem; height: 25em;">
+                    <img src="thumbnails\whitePhoto10.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)" style="width: 18.75rem; height: 25em;">
+                </div>
+            </div>
+            <div class="blackPhotos">
+                <div class="photosWrapper">
+                    <img src="thumbnails\blackPhoto01.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\blackPhoto02.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\blackPhoto03.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\blackPhoto04.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\blackPhoto05.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\blackPhoto06.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\blackPhoto07.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\blackPhoto08.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)">
+                    <img src="thumbnails\blackPhoto09.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)" style="width: 18.75rem; height: 25em;">
+                    <img src="thumbnails\blackPhoto10.webp" alt="" loading="lazy" class="portfolio_thumbnails" onclick="viewFullPhoto(this.src)" style="width: 18.75rem; height: 25em;">
+                </div>
+            </div>
+        
+        </div>
+    </main>
+    
+    <footer>
+        <div class="logo"><img src="images\openLens_Logo.svg" alt="logo"></div>
+    
+        <div class="ftContent">
+            <div class="socialsContainer">
+                <div class="ftLinkContainer">
+                    <div class="ftLink"><img src="icons\instagram_icon.svg" alt="" class="footerIcon">
+                        <div style="margin-top: -4px">Instagram</div>
+                    </div>
+                    <div class="ftLink"><img src="icons\facebook_icon.svg" alt="" class="footerIcon">
+                        <div style="margin-top: -4px">Facebook</div>
+                    </div>
+                    <div class="ftLink"><img src="icons\twitter_icon.svg" alt="" class="footerIcon">
+                        <div style="margin-top: -4px">Twitter</div>
+                    </div>
+                </div>
+                <div class="ftContactContainer">
+                    <div class="ftContact"><img src="icons\phone_icon.svg" alt="" class="footerIcon">
+                        <div>+92 01234 56789</div>
+                    </div>
+                    <div class="ftContact"><img src="icons\email_icon.svg" alt="" class="footerIcon">
+                        <div>openlens@gmail.com</div>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="ftNavMapContainer">
+                <div class="ftNavContainer">
+                    <div class="ftNav">Home</div>
+                    <div class="ftNav">Portfolio</div>
+                    <div class="ftNav">Contact</div>
+                    <div class="ftNav">About</div>
+                </div>
+                <div class="mapContainer">
+                    <div class="map">
+                        <img src="images\map.jpg" alt="map">
+                    </div>
+                    <div>
+                        <div class="ftLink"><img src="icons\map_icon.svg" alt="" class="footerIcon">
+                            <div class="location">Building 5, Street 17, Sector I-8 Markaz, Islamabad, Pakistan</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    
+        <div id="copyright_txt">© Copyright 2023</div>
+    </footer>
+
+
+
+    <script>
+        function viewFullPhoto(source) {
+            var newSource = source.replace("thumbnails","images").replace("webp","jpeg");
+            document.getElementById('fullPhoto').src=newSource;
+            document.getElementById("fullPhoto_overlay").style.display = "inline-block";
+        }
+
+        function closeFullPhoto() {
+            document.getElementById("fullPhoto_overlay").style.display = "none";
+        }
+    </script>
+
+</body>
+</html>
