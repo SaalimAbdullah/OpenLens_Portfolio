@@ -13,12 +13,22 @@
 </head>
 <body id="about_page">
     <header>
-        <div><img src="images\openLens_Logo.svg" alt="logo" style="height: 5.5rem; width: 5.5rem;"></div>
+        <div><a href="homepage.html" target="_self">
+                <img src="images\openLens_Logo.svg" alt="logo" style="height: 5.5rem; width: 5.5rem;"></a>
+        </div>
         <nav>
-            <div>Home</div>
-            <div>Portfolio</div>
-            <div>Contact</div>
-            <div>About</div>
+            <a href="homepage.html" target="_self">
+                <div>Home</div>
+            </a>
+            <a href="portfolio.html" target="_self">
+                <div>Portfolio</div>
+            </a>
+            <a href="contact_page.html" target="_self">
+                <div>Contact</div>
+            </a>
+            <a href="about.html" target="_self">
+                <div>About</div>
+            </a>
         </nav>
     </header>
     <div id="pageName">About</div>
@@ -45,14 +55,19 @@
 
 
     <footer>
-        <div class="logo"><img src="images\openLens_Logo.svg" alt="logo"></div>
+        <div class="logo">
+            <a href="homepage.html" target="_self"><img src="images\openLens_Logo.svg" alt="logo"></a>
+        </div>
     
         <div class="ftContent">
             <div class="socialsContainer">
                 <div class="ftLinkContainer">
-                    <div class="ftLink"><img src="icons\instagram_icon.svg" alt="" class="footerIcon">
-                        <div style="margin-top: -4px">Instagram</div>
-                    </div>
+    
+                    <a href="https://www.instagram.com/saalim.abdullah/">
+                        <div class="ftLink"><img src="icons\instagram_icon.svg" alt="" class="footerIcon">
+                            <div style="margin-top: -4px">Instagram</div>
+                        </div>
+                    </a>
                     <div class="ftLink"><img src="icons\facebook_icon.svg" alt="" class="footerIcon">
                         <div style="margin-top: -4px">Facebook</div>
                     </div>
@@ -65,17 +80,35 @@
                         <div>+92 01234 56789</div>
                     </div>
                     <div class="ftContact"><img src="icons\email_icon.svg" alt="" class="footerIcon">
-                        <div>openlens@gmail.com</div>
+                        <a href="mailto:maadalaadla786@gmail.com">
+                            <div>openlens@gmail.com</div>
+                        </a>
                     </div>
                 </div>
             </div>
     
             <div class="ftNavMapContainer">
                 <div class="ftNavContainer">
-                    <div class="ftNav">Home</div>
-                    <div class="ftNav">Portfolio</div>
-                    <div class="ftNav">Contact</div>
-                    <div class="ftNav">About</div>
+                    <div class="ftNav">
+                        <a href="homepage.html" target="_self">
+                            Home
+                        </a>
+                    </div>
+                    <div class="ftNav">
+                        <a href="portfolio.html" target="_self">
+                            Portfolio
+                        </a>
+                    </div>
+                    <div class="ftNav">
+                        <a href="contact_page.html" target="_self">
+                            Contact
+                        </a>
+                    </div>
+                    <div class="ftNav">
+                        <a href="about.html" target="_self">
+                            About
+                        </a>
+                    </div>
                 </div>
                 <div class="mapContainer">
                     <div class="map">
@@ -92,7 +125,6 @@
     
         <div id="copyright_txt">© Copyright 2023</div>
     </footer>
-
 
 </body>
 </html>
